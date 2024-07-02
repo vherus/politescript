@@ -1,4 +1,4 @@
-type TokenType = string
+export type TokenType = string
 
 export interface Token {
   type:     TokenType
@@ -18,7 +18,6 @@ export const PLUS   = '+'
 
 // Delimiters
 export const COMMA = ','
-export const SEMICOLON = ';'
 export const LPAREN = '('
 export const RPAREN = ')'
 export const LBRACE = '{'
@@ -37,7 +36,7 @@ const keywords = new Map<string, string>([
   ['mayhap', IF]
 ])
 
-export function LookupIdent(ident: string): TokenType {
+export function lookupIdent(ident: string): TokenType {
   if (keywords.has(ident)) {
     return keywords.get(ident)!
   }
