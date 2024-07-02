@@ -28,11 +28,13 @@ export const RBRACE = '}'
 export const FUNCTION = 'FUNCTION'
 export const LET = 'LET'
 export const CONST = 'CONST'
+export const IF = 'IF'
 
 const keywords = new Map<string, string>([
   ['wouldyoumind', FUNCTION],
-  ['allow', LET],
-  ['strictly', CONST]
+  ['permit', LET],
+  ['insist', CONST],
+  ['mayhap', IF]
 ])
 
 export function LookupIdent(ident: string): TokenType {
