@@ -32,7 +32,7 @@ var keywords = map[string]TokenType{
 	"mayhap":       IF,
 }
 
-func lookupIdent(ident string) TokenType {
+func LookupIdent(ident string) TokenType {
 	if token, exists := keywords[ident]; exists {
 		return token
 	}
