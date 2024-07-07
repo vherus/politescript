@@ -1,6 +1,6 @@
 # Scratch pad for the language design
 
-I'm only doing this in typescript because I think it's funny and it's a learning experience. I might do it in Go as well.
+Learning about interpreters while learning Go by creating a terribly polite scripting language that you should definitely not use in production.
 
 ```
 wouldyoumind summing(int[] numbers) int {
