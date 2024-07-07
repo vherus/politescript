@@ -1,9 +1,9 @@
 name: Politescript Tests
 on:
   push:
-    branches: [ main ]
+    branches: [ typescript-version ]
   pull_request:
-    branches: [ main ]
+    branches: [ typescript-version ]
 jobs:
   build:
     runs-on: ubuntu-latest
